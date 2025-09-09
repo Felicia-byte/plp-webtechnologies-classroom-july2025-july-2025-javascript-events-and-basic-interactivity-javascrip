@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive Web Pages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Interactive Web Page with JavaScript</h1>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2> Counter Game</h2>
+      <button id="decrease">-</button>
+      <span id="counterValue">0</span>
+      <button id="increase">+</button>
+    </section>
+
+    <section>
+      <h2> FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript makes web pages interactive and dynamic.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">The DOM is a programming interface for HTML and XML documents.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2> Registration Form</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required />
+          <small class="error" id="nameError"></small>
+        </label>
+        <label>
+          Email:
+          <input type="email" id="email" required />
+          <small class="error" id="emailError"></small>
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required />
+          <small class="error" id="passwordError"></small>
+        </label>
+        <button type="submit">Sign Up</button>
+        <p id="successMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
